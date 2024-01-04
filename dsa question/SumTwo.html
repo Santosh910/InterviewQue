@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var nums = [2,7,11,15]
+        // var target =9;
+
+        // function sumTwo(nums,target){
+        //     var result = [];
+        //     for(var i =0;i < nums.length;i++){
+        //         for(var j = 1;j < nums.length;j++){
+        //             var sum = nums[i] + nums [j];
+        //             if(sum === target){
+        //                 result.push(i);
+        //                 result.push(j);
+        //                 return result;
+        //             }
+        //         }
+        //     }
+        // }
+        // console.log(sumTwo(nums, target));
+
+        // var nums = [3,2,4]
+        // var target = 5;
+
+        // function sumTwo(nums,target){
+        //     var result = []
+
+        //     for(var i = 0;i< nums.length;i++){
+        //         for(var j =1;j< nums.length;j++){
+        //             var sum = nums[i] + nums[j];
+        //             if(sum === target){
+        //                 result.push(i);
+        //                 result.push(j);
+        //                 return result;
+        //             }
+        //         }
+        //     }
+        // }
+        // console.log(sumTwo(nums, target));
+
+        var nums = [3,2,4]
+        var target = 5;
+
+        function sumTwo(nums,target){
+            for(var i=0;i < nums.length;i++){
+                for(var j=1;j< nums.length;j++){
+                    if(nums[i] + nums[j] === target){
+                        return [i,j]
+                    }
+                }
+            }
+            return [i,j]
+        }
+        console.log(sumTwo(nums, target));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var str = "i ran there";
+
+        // function LtterCapitalize(str){
+        //     wordArr = str.split("");
+
+        //     for(var i =0;i <= wordArr.length;i++){
+        //         wordArr[i] = wordArr[i][0].toUpperCase()+wordArr[i].slice(1)
+        //     }
+        //     str=wordArr.join("")
+
+        //     return str;
+        // }
+        // console.log(LtterCapitalize(str))
+
+        const str = "i ran there"
+
+        // function LtterCapitalize(str) {
+        //     let words = str.split(" ")
+        //     for (let i = 0; i < words.length; i++) {
+        //         words[i] = words[i][0].toUpperCase() + words[i].substring(1);
+        //     }
+        //     return words.join(" ")
+
+
+        // }
+        // document.write(LtterCapitalize(str))
+
+        function LetterCapitalize(str) {
+            let words = str.split(" ");
+            for (let i = 0; i < words.length; i++) {
+                words[i] = words[i][0].toUpperCase() + words[i].substring(1);
+            }
+            return words.join(" ")
+        }
+        document.write(LetterCapitalize(str))
+
+
+        //         function LetterCapitalize(str) {
+        //   // Split the string into an array of words
+        //   const words = str.split(' ');
+
+        //   // Capitalize the first letter of each word
+        //   for (let i = 0; i < words.length; i++) {
+        //     words[i] = capitalizeFirstLetter(words[i]);
+        //   }
+
+        //   // Join the words to form the final string
+        //   return words.join(' ');
+        // }
+
+        // // Helper function to capitalize the first letter of a word
+        // function capitalizeFirstLetter(word) {
+        //   return word.charAt(0).toUpperCase() + word.slice(1);
+        // }
+
+        // // Example usage:
+        // const inputString = "hello world";
+        // const result = LetterCapitalize(inputString);
+        // document.write(result); // Output: Hello World
+
+
+        // function LetterCapitalize(str) {
+        //   // Split the string into an array of words
+        //   const words = str.split();
+
+        //   // Capitalize the first letter of each word
+        //   for (let i = 0; i < words.length; i++) {
+        //     words[i] = words[i][0].toUpperCase() + words[i].substring(1);
+        //   }
+
+        //   // Join the words to form the final string
+        //   return words.join(' ');
+        // }
+
+        // // Example usage:
+        // const inputString = "hello world";
+        // const result = LetterCapitalize(inputString);
+        // document.write(result); // Output: Hello World
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

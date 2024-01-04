@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const sentence = "This is a simple example sentence with some long words."
+
+        function findLongestWord(str){
+            const words = str.split(/\s+/);
+            let longestWord = '';
+
+            for(const word of words){
+                const cleanedWord = word.replace(/[^a-zA-Z]/g,'');
+
+                if(cleanedWord.length > longestWord.length){
+                    longestWord = cleanedWord;
+                }
+            }
+            return longestWord;
+        }
+        console.log(findLongestWord(sentence)) 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

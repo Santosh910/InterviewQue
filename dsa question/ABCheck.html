@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const str = "lane borrowed";
+
+        function ABCheck(str){
+            if(str.length < 5 ){
+                return false;
+            }
+            console.log(str.length);
+
+            for(let i = 0;i <str.length-4;i++){
+                // console.log(str.length-4)
+                if(str[i] === 'a'){
+                    if(str[i+4] === 'b'){
+                        return true;
+                    }
+                }
+
+                if(str[i] === "b"){
+                    if(str[i+4] === 'a'){
+                        return true;
+                    }
+                }
+            }
+            return false
+        }
+
+        console.log(ABCheck(str))
+
+        // function ABCheck(str){
+
+        //     const lowerStr = str.toLowerCase();
+
+        //     return lowerStr.includes('a...b') || lowerStr.includes('b...a')
+        // }
+        // console.log(ABCheck(str)) 
+
+        // function ABCheck(str) {
+        //     // Convert the string to lowercase for case-insensitive comparison
+        //     const lowerStr = str.toLowerCase();
+
+        //     // Check if the pattern 'a...b' or 'b...a' exists
+        //     return /a...b|b...a/.test(lowerStr);
+        // }
+
+        // // Example usage
+        // console.log(ABCheck("lane borrowed")); // Output: true (there are three characters between 'a' and 'b')
+        // console.log(ABCheck("asdsb"));
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

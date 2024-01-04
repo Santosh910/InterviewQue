@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const inputString = "hello world";
+
+        function letterChanges(str) {
+            const shiftLetter = (char) => {
+                if (/[a-z]/.test(char)) {
+                    let shifted = String.fromCharCode(char.charCodeAt(0) + 1);
+
+                    if (/[aeiou]/.test(shifted)) {
+                        shifted = shifted.toUpperCase()
+                    }
+
+                    return shifted;
+                }
+                return char;
+            }
+            return str.split('').map(shiftLetter).join('')
+        }
+
+        console.log(letterChanges(inputString))
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

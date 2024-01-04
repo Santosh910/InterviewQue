@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var nums = [1,1,1]
+        function duplicate(nums){
+            var result = []
+            let i = 0;
+            for(let j = 1;j< nums.length;j++){
+                if(nums[i] !== nums[j]){
+                    i++;
+                    nums[i]=nums[j];
+
+                    result.push(nums[i])
+                }
+            }
+            return i++;
+        }
+        console.log(duplicate(nums))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

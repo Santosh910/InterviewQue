@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         var str = "helllo";
+         function AlphabetSoup(str){
+            let word = str.split('')
+            for(let i =0;i< word.length;i++){
+                for(let j=0;j < word.length;j++){
+                    if(word[j] >word[j+1]){
+                        let temp = word[j];
+                        word[j] = word[j+1];
+                        word[j+1] = temp;
+                    }
+                }
+                return word.join('')
+            }
+            
+         }
+         console.log(AlphabetSoup(str))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

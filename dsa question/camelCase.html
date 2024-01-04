@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var str = "hello_world_example"
+
+        // function camelCase(str){
+        // let words = str.split(/\s+|_+/);
+        // strArr = strArr.map((val,ind)=>{
+        //     val = val.toLowerCase();
+        //     if(ind){
+        //         valArr = val.split('');
+        //         valArr[0]=valArr[0].toUpperCase();
+        //         return valArr.join('');
+        //     }
+        //     return val;
+        // })
+        // return strArr.join('');
+        // for(let i = 1;i<words.length;i++){
+        //       words[i]=words[i].charAt(0).toUpperCase() + words[i].slice(1);
+        // }
+        // const camelCaseString = words.join('');
+
+        // return camelCaseString;
+        // }
+        // console.log(camelCase(str))
+
+        let str = "hello_world_example"
+
+        function camelCase(str) {
+            let words = str.split(/[\s_]+/)
+            for (var i = 1; i < words.length; i++) {
+                words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+            }
+            return words.join('')
+
+        }
+        document.write(camelCase(str))
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

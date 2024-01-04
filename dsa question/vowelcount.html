@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const input = "hellodDKklais";
+
+        function VowelCount(str){
+            let vowels = 'aeiou';
+            let count = 0;
+
+            for(let i = 0;i <str.length;i++){
+                if(vowels.includes(str[i])){
+                    count++;
+                }
+            }
+            return count;
+        }
+        console.log(VowelCount(input))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
